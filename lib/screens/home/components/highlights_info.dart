@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/components/animated_counter.dart';
-import 'package:flutter_profile/responsive.dart';
+import '../../../components/animated_counter.dart';
+import '../../../responsive.dart';
 
 import '../../../constants.dart';
 import 'highlight.dart';

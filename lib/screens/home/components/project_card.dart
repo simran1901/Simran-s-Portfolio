@@ -2,8 +2,8 @@
 import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/project.dart';
-import 'package:flutter_profile/responsive.dart';
+import '../../../models/project.dart';
+import '../../../responsive.dart';
 
 import '../../../constants.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/screens/main/main_screen.dart';
+import '../../screens/main/main_screen.dart';
 
 import 'components/highlights_info.dart';
 import 'components/home_banner.dart';

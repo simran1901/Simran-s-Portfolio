@@ -2,7 +2,7 @@
 import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
+import '../../../constants.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'area_info_text.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/responsive.dart';
+import '../../constants.dart';
+import '../../responsive.dart';
 
 import 'components/side_menu.dart';
 
