@@ -15,7 +15,7 @@ final List<Recommendation> demoRecommendations = [
     name: "Rishabh Raj",
     source: "Linkedin",
     text:
-        "Simran is great asset for any organization. It's a true pleasure working with her at IEEE CU. Her flutter skill is amazing as well as her professionalism and being a good team player. Simran's problem solving skill is also one of her great skills.",
+        "Simran is a great asset for any organization. It's a true pleasure working with her at IEEE CU. Her flutter skill is amazing as well as her professionalism and being a good team player. Simran's problem solving skill is also one of her great skills.",
   ),
   Recommendation(
     name: "Prof. Gurpreet Singh",
