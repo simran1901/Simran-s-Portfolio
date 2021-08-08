@@ -9,3 +9,10 @@ const bgColor = Color(0xFF1E1E28);
 const defaultPadding = 20.0;
 const defaultDuration = Duration(seconds: 1); // we use it on our animation
 const maxWidth = 1440.0; // max width of our web
+
+const linkedin = 'https://www.linkedin.com/in/simran-makhijani-428871123/';
+const github = 'https://github.com/simran1901/';
+const twitter = 'https://twitter.com/SimranMakhijan6/';
+const resume = 'https://bit.ly/3yzxs5F';
+
+// assets: https://bit.ly/3jF85Jv

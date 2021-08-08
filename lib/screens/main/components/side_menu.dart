@@ -62,9 +62,7 @@ class SideMenu extends StatelessWidget {
                                 ),
                               ),
                               onPressed: () {
-                                html.window.open(
-                                    'https://drive.google.com/file/d/1YFwv-SOCVNY-ygxzH4_YH1eGNvQT0XA_/view?usp=sharing',
-                                    '_self');
+                                html.window.open(resume, '_self');
                               },
                             ),
                             SizedBox(width: defaultPadding / 2),
@@ -81,24 +79,19 @@ class SideMenu extends StatelessWidget {
                           Spacer(),
                           IconButton(
                             onPressed: () {
-                              html.window.open(
-                                  'https://www.linkedin.com/in/simran-makhijani-428871123/',
-                                  '_self');
+                              html.window.open(linkedin, '_self');
                             },
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
                             onPressed: () {
-                              html.window.open(
-                                  'https://github.com/simran1901/', '_self');
+                              html.window.open(github, '_self');
                             },
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
                             onPressed: () {
-                              html.window.open(
-                                  'https://twitter.com/SimranMakhijan6/',
-                                  '_self');
+                              html.window.open(twitter, '_self');
                             },
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),

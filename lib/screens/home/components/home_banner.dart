@@ -49,7 +49,7 @@ class HomeBanner extends StatelessWidget {
                 if (!Responsive.isMobileLarge(context))
                   ElevatedButton(
                     onPressed: () {
-                      html.window.open('https://drive.google.com/file/d/1YFwv-SOCVNY-ygxzH4_YH1eGNvQT0XA_/view?usp=sharing', '_self');
+                      html.window.open(resume, '_self');
                     },
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.symmetric(
