@@ -1,4 +1,4 @@
-# Responsive and Animated Portfolio Website & App - Flutter UI
+# Simran's Portfolio
 
 **Packages we are using:**
 
