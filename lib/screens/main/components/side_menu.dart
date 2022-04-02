@@ -37,8 +37,8 @@ class SideMenu extends StatelessWidget {
                       text: "New Delhi",
                     ),
                     AreaInfoText(
-                      title: "Age",
-                      text: "20",
+                      title: "D.O.B",
+                      text: "19-08-2001",
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),
