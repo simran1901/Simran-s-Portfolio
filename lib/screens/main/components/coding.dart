@@ -30,7 +30,7 @@ class Coding extends StatelessWidget {
           label: "Python",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.6,
+          percentage: 0.72,
           label: "NodeJS",
         ),
         AnimatedLinearProgressIndicator(
