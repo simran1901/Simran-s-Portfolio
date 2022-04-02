@@ -53,7 +53,7 @@ class SideMenu extends StatelessWidget {
                           children: [
                             TextButton(
                               child: Text(
-                                "DOWNLOAD CV",
+                                "VIEW RESUME",
                                 style: TextStyle(
                                   color: Theme.of(context)
                                       .textTheme
