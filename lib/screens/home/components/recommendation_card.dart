@@ -28,7 +28,7 @@ class RecommendationCard extends StatelessWidget {
           const SizedBox(height: defaultPadding),
           Text(
             recommendation.text!,
-            maxLines: 4,
+            maxLines: 7,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(height: 1.5),
           )

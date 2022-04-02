@@ -24,7 +24,7 @@ final List<Recommendation> demoRecommendations = [
         "I have had immense pleasure working with a dedicated and professional student like Simran. I worked with and mentored her at Alexa Developers' Community - CU. She is a quick learner and picks up things easily.",
   ),
   Recommendation(
-    name: "Mrs. Sugandha Sharma",
+    name: "Er. Sugandha Sharma",
     source: "Linkedin",
     text:
         "Very straightforward, professional and also one of the most career-driven student I have ever met! I worked with her at IEEE CU and I can assure everyone that she will be an asset to anyone who hires her.",
