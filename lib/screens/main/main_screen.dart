@@ -12,7 +12,6 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // We hide the appbar on desktop
       appBar: Responsive.isDesktop(context)
           ? null
           : AppBar(
@@ -45,7 +44,7 @@ class MainScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       ...children,
-                      // our footer
+                      // footer
                     ],
                   ),
                 ),
