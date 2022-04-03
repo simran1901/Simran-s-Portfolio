@@ -15,7 +15,7 @@ List<Project> demoProjects = [
     title: "Chemystery (June 2021)",
     description:
         "This application combines ethos, culture, history and modern chemistry in one. We have used ReactJS and Firebase for building overall application. By developing this project we were selected as Grand Finalist of Toycathon 2021 (Digital Edition).",
-    link: 'https://mystery-in-chemistry.web.app/index.html',
+    link: 'https://mchemystery.web.app/',
   ),
   Project(
     title: "Transport and Travel booking app (March 2021)",
