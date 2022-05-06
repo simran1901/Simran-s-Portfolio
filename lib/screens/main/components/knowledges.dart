@@ -22,10 +22,10 @@ class Knowledges extends StatelessWidget {
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
-        KnowledgeText(text: "Flutter, Dart, Git"),
+        KnowledgeText(text: "Flutter, Dart, Git, CP"),
         KnowledgeText(text: "Firebase, MongoDB, MySQL"),
         KnowledgeText(text: "NodeJS, ExpressJS, Java"),
-        KnowledgeText(text: "Patents, Linux"),
+        KnowledgeText(text: "Patents, Linux, SDLC"),
         KnowledgeText(text: "Operating System, DBMS"),
       ],
     );
