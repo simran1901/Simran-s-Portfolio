@@ -8,7 +8,7 @@ List<Project> demoProjects = [
   Project(
     title: "Virtual Keyboard for differently abled (April 2021)",
     description:
-        "The main objective of our project is to propose a useful BCI (Brain Computer Interface) that monitors the blinking pattern of the challenged users and converts these bio-electric signals and use them as appropriate commands to allow them to communicate. This project helped me attain 13th rank in Hack Girl Summer Hackathon by MLH.",
+        "This project proposes a useful BCI that monitors the blinking pattern of the challenged users, converts these bio-electric signals and uses them as appropriate commands to allow them to communicate. It helped me attain 13th rank globally in MLH's Hack Girl Summer Hackathon.",
     link: 'https://github.com/simran1901/Virtual-Keyboard-for-Divyangs',
   ),
   Project(
