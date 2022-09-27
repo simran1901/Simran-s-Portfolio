@@ -95,6 +95,12 @@ class SideMenu extends StatelessWidget {
                             },
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
+                          IconButton(
+                            onPressed: () {
+                              html.window.open(coding, '_self');
+                            },
+                            icon: SvgPicture.asset("assets/icons/coding.svg"),
+                          ),
                           Spacer(),
                         ],
                       ),
