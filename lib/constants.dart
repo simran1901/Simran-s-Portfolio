@@ -14,6 +14,6 @@ const linkedin = 'https://www.linkedin.com/in/simran-makhijani-428871123/';
 const github = 'https://github.com/simran1901/';
 const twitter = 'https://twitter.com/SimranMakhijan6/';
 const coding = 'https://clist.by/coder/simranmakhijani55/';
-const resume = 'https://bit.ly/377WdNw';
+const resume = 'https://shorturl.at/otX36';
 
-// assets: https://bit.ly/3jF85Jv
+// assets: https://shorturl.at/dmrt9
