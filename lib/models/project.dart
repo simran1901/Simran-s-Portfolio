@@ -18,7 +18,7 @@ List<Project> demoProjects = [
     link: 'https://mchemystery.web.app/',
   ),
   Project(
-    title: "Transport and Travel booking app (March 2021)",
+    title: "Transport & Travel booking app (March 2021)",
     description:
         "This application helps digitalize the process of booking tickets for travels and transports in realtime using Firebase. We earned 3rd rank by submitting it for FIreQuest by Google Developers' Group.",
     link: 'https://github.com/simran1901/Travel-App',
