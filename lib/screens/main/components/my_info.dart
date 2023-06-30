@@ -32,24 +32,6 @@ class MyInfo extends StatelessWidget {
                 height: 1.5,
               ),
             ),
-            Text(
-              "CSE student,",
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontWeight: FontWeight.w200,
-                height: 1.5,
-              ),
-            ),
-            Text(
-              "Chandigarh University",
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontWeight: FontWeight.w200,
-                height: 1.5,
-              ),
-            ),
             Spacer(flex: 2),
           ],
         ),
