@@ -87,7 +87,7 @@ class MyBuildAnimatedText extends StatelessWidget {
           if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
-          Text("I build "),
+          Text("I build ", style: TextStyle(fontSize: Responsive.isMobile(context)? 12: 14)),
           Responsive.isMobile(context)
               ? Expanded(child: AnimatedText())
               : AnimatedText(),
@@ -112,18 +112,22 @@ class AnimatedText extends StatelessWidget {
         TyperAnimatedText(
           "java APIs with an experience of 1+ years.",
           speed: Duration(milliseconds: 60),
+          textStyle: TextStyle(fontSize: Responsive.isMobile(context)? 12: 14)
         ),
         TyperAnimatedText(
           "responsive web and mobile apps.",
           speed: Duration(milliseconds: 60),
+          textStyle: TextStyle(fontSize: Responsive.isMobile(context)? 12: 14)
         ),
         TyperAnimatedText(
           "chat app with flutter and NodeJS.",
           speed: Duration(milliseconds: 60),
+          textStyle: TextStyle(fontSize: Responsive.isMobile(context)? 12: 14)
         ),
         TyperAnimatedText(
           "transport and travel booking app.",
           speed: Duration(milliseconds: 60),
+          textStyle: TextStyle(fontSize: Responsive.isMobile(context)? 12: 14)
         ),
       ],
     );
