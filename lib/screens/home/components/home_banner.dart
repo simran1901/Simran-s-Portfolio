@@ -110,7 +110,11 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "responsive web and mobile app.",
+          "java APIs with an experience of 1+ years.",
+          speed: Duration(milliseconds: 60),
+        ),
+        TyperAnimatedText(
+          "responsive web and mobile apps.",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
@@ -138,7 +142,7 @@ class FlutterCodedText extends StatelessWidget {
         text: "<",
         children: [
           TextSpan(
-            text: "flutter",
+            text: "code",
             style: TextStyle(color: primaryColor),
           ),
           TextSpan(text: ">"),
