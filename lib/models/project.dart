@@ -6,9 +6,9 @@ class Project {
 
 List<Project> demoProjects = [
   Project(
-    title: "Virtual Keyboard for differently abled (April 2021)",
+    title: "Virtual Keyboard (April 2021)",
     description:
-        "This project proposes a useful BCI that monitors the blinking pattern of the challenged users, converts these bio-electric signals and uses them as appropriate commands to allow them to communicate. It helped me attain 13th rank globally in MLH's Hack Girl Summer Hackathon.",
+        "This project proposes a useful BCI for differently abled that monitors the blinking pattern of the challenged users, converts these bio-electric signals to commands to allow them to communicate. Ranked 13th globally at MLH's Hack Girl Summer Hackathon.",
     link: 'https://github.com/simran1901/Virtual-Keyboard-for-Divyangs',
   ),
   Project(
@@ -26,7 +26,7 @@ List<Project> demoProjects = [
   Project(
     title: "Warehouse Simulation System (February 2021)",
     description:
-        "It is a fully functional warehouse system using Gazebo and RVIZ simulator and programmed all the modules using Python as well developed working dashboard for recording package data using html, css and Google script and our team was in Top-50 finalists for EYantra (Robotics competition by IIT -Bombay)",
+        "It is a fully functional warehouse system using Python, Gazebo and RVIZ simulator. Developed dashboard using html, css and Google script. Got into Top-50 finalists for EYantra (Robotics competition by IIT -Bombay)",
     link: 'https://youtu.be/-BvGiOORlfA',
   ),
   Project(
