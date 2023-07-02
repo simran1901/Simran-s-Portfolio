@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simran_portfolio/screens/home/components/experiences.dart';
 import '../../screens/main/main_screen.dart';
 
 import 'components/highlights_info.dart';
@@ -15,6 +16,7 @@ class HomeScreen extends StatelessWidget {
       children: [
         HomeBanner(),
         HighlightsInfo(),
+        Experiences(),
         MyProjects(),
         Recommendations(),
       ],
