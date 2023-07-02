@@ -13,43 +13,45 @@ class ExperienceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card( child: Container(
-      padding: const EdgeInsets.all(defaultPadding),
-      color: secondaryColor,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Image.network(
-                experience.imageUrl!,
-                height: 50,
-                width: 50,
-              ),
-              SizedBox(width: defaultPadding),
-              Text(
-                experience.companyName!,
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
-          SizedBox(height: 10),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: experience.designations!.length,
-            itemBuilder: (context, index) => DesignationCard(
-              designation: experience.designations![index],
-              isLast: experience.designations!.length == index + 1,
+    return Card(
+      child: Container(
+        padding: const EdgeInsets.all(defaultPadding),
+        color: secondaryColor,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.network(
+                  experience.imageUrl!,
+                  height: 50,
+                  width: 50,
+                ),
+                SizedBox(width: defaultPadding),
+                Text(
+                  experience.companyName!,
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+              ],
             ),
-          )
-        ],
+            SizedBox(height: 10),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: experience.designations!.length,
+              itemBuilder: (context, index) => DesignationCard(
+                designation: experience.designations![index],
+                isLast: experience.designations!.length == index + 1,
+              ),
+            )
+          ],
+        ),
       ),
-    ));
+    );
   }
 }
 
