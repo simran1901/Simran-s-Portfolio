@@ -13,13 +13,16 @@ class ExperienceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Card( child: Container(
       padding: const EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Image.network(
                 experience.imageUrl!,
@@ -46,7 +49,7 @@ class ExperienceCard extends StatelessWidget {
           )
         ],
       ),
-    );
+    ));
   }
 }
 
@@ -63,9 +66,12 @@ class DesignationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 10),
         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
               padding: EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -83,6 +89,7 @@ class DesignationCard extends StatelessWidget {
         SizedBox(height: 10),
         IntrinsicHeight(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
