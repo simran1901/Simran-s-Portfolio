@@ -120,12 +120,12 @@ class DesignationCard extends StatelessWidget {
                     SizedBox(height: 10),
                     Text(
                       designation.description,
-                      maxLines: 2,
+                      maxLines: 4,
                       softWrap: true,
                     ),
                     SizedBox(height: 10),
                     RichText(
-                      maxLines: 2,
+                      maxLines: 3,
                       softWrap: true,
                       text: TextSpan(
                         text: "Skills: ",
