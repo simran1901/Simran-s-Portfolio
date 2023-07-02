@@ -45,7 +45,7 @@ class Designation {
     }
 
     final Duration duration1 = end.difference(start);
-    int months = (duration1.inDays / 30).ceil();
+    int months = ((duration1.inDays + (duration1.inDays ~/ 60)) / 30).ceil();
     int years = months ~/ 12;
     if (years > 0) {
       this.duration = "$years yr ";
