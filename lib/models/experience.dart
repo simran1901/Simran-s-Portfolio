@@ -106,7 +106,7 @@ List<Experience> demoExperiences = [
         description:
             "Built an AI-enabled B2B invoice management system using various technologies.",
         skills:
-            "Machine Learning · React.js · Databases · Web Development · Python (Programming Language) · Java",
+            "Machine Learning · React.js · Databases · Web Development · Python · Java",
       ),
     ],
   ),
