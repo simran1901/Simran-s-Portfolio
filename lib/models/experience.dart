@@ -1,5 +1,6 @@
 import 'package:intl/intl.dart';
-import 'package:simran_portfolio/enums.dart';
+
+import '../enums.dart';
 
 class Experience {
   final String? companyName;
