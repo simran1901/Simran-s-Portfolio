@@ -23,8 +23,8 @@ class Knowledges extends StatelessWidget {
           ),
         ),
         KnowledgeText(text: "Competitive Programming, C++"),
-        KnowledgeText(text: "Firebase, AWS, MySQL"),
-        KnowledgeText(text: "Java, Node.js, Flutter"),
+        KnowledgeText(text: "Firebase, AWS, MySQL, Networking"),
+        KnowledgeText(text: "Java, Node.js, Flutter, Linux"),
         KnowledgeText(text: "Spring boot, Postman, Hibernate"),
       ],
     );
