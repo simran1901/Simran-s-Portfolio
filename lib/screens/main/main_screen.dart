@@ -45,7 +45,6 @@ class MainScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       ...children,
-                      // footer
                     ],
                   ),
                 ),

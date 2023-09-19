@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simran_portfolio/screens/home/components/experiences.dart';
+import 'package:simran_portfolio/screens/home/components/footer.dart';
 import '../../screens/main/main_screen.dart';
 
 import 'components/highlights_info.dart';
@@ -19,6 +20,7 @@ class HomeScreen extends StatelessWidget {
         Experiences(),
         MyProjects(),
         Recommendations(),
+        Footer(),
       ],
     );
   }
