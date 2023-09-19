@@ -19,7 +19,7 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text("Built by Simran Makhijani", style: Theme.of(context).textTheme.bodyText1,),
+            Text("Developed by Simran Makhijani", style: Theme.of(context).textTheme.bodyText1,),
             Text("Active since 2021"),
           ],
         ),
