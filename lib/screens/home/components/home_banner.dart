@@ -110,7 +110,7 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "java APIs with an experience of 1+ years.",
+          "java APIs with an experience of 2+ years.",
           speed: Duration(milliseconds: 60),
           textStyle: TextStyle(fontSize: Responsive.isMobile(context)? 12: 14)
         ),

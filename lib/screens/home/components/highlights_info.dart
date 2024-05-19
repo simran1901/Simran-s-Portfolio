@@ -29,7 +29,7 @@ class HighlightsInfo extends StatelessWidget {
                     ),
                     Highlight(
                       counter: AnimatedCounter(
-                        value: 1,
+                        value: 2,
                         text: "+",
                       ),
                       label: "Years Experience  ",
@@ -70,7 +70,7 @@ class HighlightsInfo extends StatelessWidget {
                 ),
                 Highlight(
                   counter: AnimatedCounter(
-                    value: 1,
+                    value: 2,
                     text: "+",
                   ),
                   label: "Years Experience",

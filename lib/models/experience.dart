@@ -20,7 +20,7 @@ class Designation {
   String duration = "";
   late WorkType workType;
   late JobType jobType;
-  late String description;
+  late List<String> description;
   late String skills;
 
   Designation(
@@ -30,7 +30,7 @@ class Designation {
       required bool isPresent,
       required WorkType workType,
       required JobType jobType,
-      required String description,
+      required List<String> description,
       required String skills}) {
     this.title = title;
     this.start = start;
@@ -64,19 +64,34 @@ class Designation {
 List<Experience> demoExperiences = [
   Experience(
     companyName: "Adda247",
-    imageUrl:
-        "https://media.licdn.com/dms/image/C4D0BAQGZhNHq9X4-0w/company-logo_100_100/0/1671259967619?e=1696464000&v=beta&t=wlzZWMu3eWCBUAXgx0fjUbATvAHCY2a6bPsr7tq5J64",
+    imageUrl: "assets/images/addaLogo.png",
     designations: [
       Designation(
-        title: "SDE",
-        start: new DateTime(2023, 07, 01),
+        title: "SDE 1",
+        start: new DateTime(2024, 04, 01),
         end: DateTime.now(),
         isPresent: true,
         workType: WorkType.Remote,
         jobType: JobType.FT,
-        description:
-            "Work as back-end developer. Build microservices using java spring boot, etc.",
-        skills: "MySQL · Lua · API Development · Postman · Spring Boot · Java",
+        description: [
+          "Currently working as Back-end developer responsible for building and deploying scalable microservices.",
+        ],
+        skills: "Java · Spring Boot · MySQL · Python · Lua · ElasticSearch · Redis · MongoDB · CI/CD",
+      ),
+      Designation(
+        title: "SDE",
+        start: new DateTime(2023, 07, 01),
+        end: new DateTime(2024, 03, 31),
+        isPresent: false,
+        workType: WorkType.Remote,
+        jobType: JobType.FT,
+        description: [
+          "Received Pre-Placement Offer (PPO) in recognition of exemplary performance and outstanding contributions during tenure as a SDE Trainee.",
+          "Led the Test Series Module at Adda247, driving the successful delivery of high-quality software solutions by implementing best practices and ensuring seamless integration.",
+          "Developed a Rank Prediction module leveraging normal distribution, probability, and statistical inference. Handled concurrency on Redis using locking mechanisms and Kafka to ensure no data loss.",
+          "Designed & implemented a highly scalable Live Test feature providing users with real-life strictly timed test environment developed using Lambda, SQS, Redis, Quartz, Spring boot.",
+        ],
+        skills: "Java · Spring Boot · MySQL · Python · Lua · ElasticSearch · Redis · MongoDB · CI/CD",
       ),
       Designation(
         title: "SDE Trainee",
@@ -85,16 +100,18 @@ List<Experience> demoExperiences = [
         isPresent: false,
         workType: WorkType.Remote,
         jobType: JobType.FIN,
-        description:
-            "Work as back-end developer. Build microservices using java spring boot, etc.",
-        skills: "API Development · Postman · Spring Boot · Java",
+        description: [
+          "Developed RESTful APIs leveraging Spring Boot, MariaDB, Kafka, ElasticSearch, Redis, MongoDB and more.",
+          "Developed significant features for Adda247 & Sankalp Bharat, contributing to their enhanced functionality & user experience.",
+          "Optimized multiple APIs and conducted load test using Jmeter , ensuring scalability and availability to meet the demands of high traffic volumes.",
+        ],
+        skills: "Java · Spring Boot · MySQL · Python · Lua · ElasticSearch · Redis",
       ),
     ],
   ),
   Experience(
     companyName: "HighRadius",
-    imageUrl:
-        "https://media.licdn.com/dms/image/D4D0BAQEaUcGu3kvuyw/company-logo_100_100/0/1686122589880?e=1696464000&v=beta&t=NS-K7sVXSwgtVQ05nZqUoIns7iKtvYtziSbEaDICEg8",
+    imageUrl: "assets/images/hrLogo.png",
     designations: [
       Designation(
         title: "Software Engineer Intern",
@@ -103,8 +120,11 @@ List<Experience> demoExperiences = [
         isPresent: false,
         workType: WorkType.Remote,
         jobType: JobType.PIN,
-        description:
-            "Built an AI-enabled B2B invoice management system using various technologies.",
+        description: [
+          "Contributed as a Full Stack Developer, developed an AI-enabled B2B invoice management system to streamline processes.",
+          "Implemented Machine Learning algorithms, React.js for frontend, and robust databases, to create an efficient platform.",
+          "Leveraged proficiency in Python and Java to integrate backend functionalities seamlessly, ensuring optimal performance."
+        ],
         skills:
             "Machine Learning · React.js · Databases · Web Development · Python · Java",
       ),
@@ -112,8 +132,7 @@ List<Experience> demoExperiences = [
   ),
   Experience(
     companyName: "Upwork",
-    imageUrl:
-        "https://media.licdn.com/dms/image/C4E0BAQFAvA55uI9RQQ/company-logo_100_100/0/1620158724382?e=1696464000&v=beta&t=TqYGyhCSr6EftyvjOoth2unU9PrJIWC06MdZMCFPFgc",
+    imageUrl: "assets/images/upLogo.png",
     designations: [
       Designation(
         title: "Freelance Software Developer",
@@ -122,8 +141,9 @@ List<Experience> demoExperiences = [
         isPresent: false,
         workType: WorkType.Remote,
         jobType: JobType.FL,
-        description:
-            "Delivered multiple Node.js and Flutter projects to clients.",
+        description: [
+          "Delivered multiple Node.js and Flutter projects to clients."
+        ],
         skills: "Postman API · MongoDB · Socket.io · Flutter · Node.js",
       ),
     ],

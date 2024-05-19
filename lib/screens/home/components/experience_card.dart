@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simran_portfolio/screens/home/components/unordered_list.dart';
 
 import '../../../models/experience.dart';
 import '../../../constants.dart';
@@ -25,10 +26,10 @@ class ExperienceCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image.network(
+                Image.asset(
                   experience.imageUrl!,
-                  height: 50,
                   width: 50,
+                  height: 50,
                 ),
                 SizedBox(width: defaultPadding),
                 Text(
@@ -118,12 +119,13 @@ class DesignationCard extends StatelessWidget {
                         " · " +
                         designation.workType.value),
                     SizedBox(height: 10),
-                    Text(
-                      designation.description,
-                      maxLines: 5,
-                      softWrap: true,
-                      overflow: TextOverflow.ellipsis,
-                    ),
+                    UnorderedList(designation.description),
+                    // Text(
+                    //   designation.description,
+                    //   maxLines: 20,
+                    //   softWrap: true,
+                    //   overflow: TextOverflow.ellipsis,
+                    // ),
                     SizedBox(height: 10),
                     RichText(
                       maxLines: 5,
