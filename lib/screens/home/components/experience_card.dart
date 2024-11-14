@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:simran_portfolio/screens/home/components/unordered_list.dart';
 
-import '../../../models/experience.dart';
 import '../../../constants.dart';
+import '../../../models/experience.dart';
 
 class ExperienceCard extends StatelessWidget {
   const ExperienceCard({
@@ -42,7 +42,7 @@ class ExperienceCard extends StatelessWidget {
             SizedBox(height: 10),
             ListView.builder(
               shrinkWrap: true,
-             physics: NeverScrollableScrollPhysics(),
+              physics: NeverScrollableScrollPhysics(),
               itemCount: experience.designations!.length,
               itemBuilder: (context, index) => DesignationCard(
                 designation: experience.designations![index],
@@ -56,7 +56,7 @@ class ExperienceCard extends StatelessWidget {
   }
 }
 
-class DesignationCard extends StatelessWidget {
+class DesignationCard extends StatefulWidget {
   const DesignationCard({
     Key? key,
     required this.designation,
@@ -65,6 +65,24 @@ class DesignationCard extends StatelessWidget {
 
   final Designation designation;
   final bool isLast;
+
+  @override
+  State<DesignationCard> createState() => _DesignationCardState();
+}
+
+class _DesignationCardState extends State<DesignationCard> {
+  final GlobalKey _key = GlobalKey();
+  double contentHeight = 0;
+  @override
+  void initState() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final RenderBox renderBox =
+          _key.currentContext?.findRenderObject() as RenderBox;
+      contentHeight = renderBox.size.height;
+      print("Height of the widget: $contentHeight");
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,78 +103,82 @@ class DesignationCard extends StatelessWidget {
               ),
             ),
             Text(
-              designation.title,
+              widget.designation.title,
               style: TextStyle(color: Colors.white),
             ),
           ],
         ),
         SizedBox(height: 10),
-        IntrinsicHeight(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: VerticalDivider(
-                  color: isLast ? Colors.transparent : Colors.white,
-                  thickness: 1,
-                ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              height: contentHeight,
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: VerticalDivider(
+                color: widget.isLast ? Colors.transparent : Colors.white,
+                thickness: 1,
               ),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      designation.startTime +
-                          " - " +
-                          designation.endTime +
-                          " · " +
-                          designation.duration,
-                    ),
-                    SizedBox(height: 3),
-                    Text(designation.jobType.value +
-                        " · " +
-                        designation.workType.value),
-                    SizedBox(height: 10),
-                    UnorderedList(designation.description),
-                    // Text(
-                    //   designation.description,
-                    //   maxLines: 20,
-                    //   softWrap: true,
-                    //   overflow: TextOverflow.ellipsis,
-                    // ),
-                    SizedBox(height: 10),
-                    RichText(
-                      maxLines: 5,
-                      softWrap: true,
-                      overflow: TextOverflow.ellipsis,
-                      text: TextSpan(
-                        text: "Skills: ",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: bodyTextColor,
-                        ),
-                        children: [
-                          TextSpan(
-                            text: designation.skills,
-                            style: TextStyle(
-                              fontWeight: FontWeight.normal,
-                              color: bodyTextColor,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                  ],
-                ),
-              ),
-            ],
-          ),
+            ),
+            content(),
+          ],
         ),
       ],
+    );
+  }
+
+  Widget content() {
+    return Flexible(
+      key: _key,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            widget.designation.startTime +
+                " - " +
+                widget.designation.endTime +
+                " · " +
+                widget.designation.duration,
+          ),
+          SizedBox(height: 3),
+          Text(widget.designation.jobType.value +
+              " · " +
+              widget.designation.workType.value),
+          SizedBox(height: 10),
+          UnorderedList(widget.designation.description),
+          // Text(
+          //   designation.description,
+          //   maxLines: 20,
+          //   softWrap: true,
+          //   overflow: TextOverflow.ellipsis,
+          // ),
+          SizedBox(height: 10),
+          RichText(
+            maxLines: 5,
+            softWrap: true,
+            overflow: TextOverflow.ellipsis,
+            text: TextSpan(
+              text: "Skills: ",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: bodyTextColor,
+              ),
+              children: [
+                TextSpan(
+                  text: widget.designation.skills,
+                  style: TextStyle(
+                    fontWeight: FontWeight.normal,
+                    color: bodyTextColor,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 10),
+        ],
+      ),
     );
   }
 }

@@ -67,7 +67,7 @@ List<Experience> demoExperiences = [
     imageUrl: "assets/images/amexgbtLogo.jpg",
     designations: [
       Designation(
-        title: "SDE II",
+        title: "SDE I",
         start: new DateTime(2024, 09, 03),
         end: DateTime.now(),
         isPresent: true,
@@ -97,7 +97,7 @@ List<Experience> demoExperiences = [
         skills: "Java · Spring Boot · MySQL · Python · Lua · ElasticSearch · Redis · MongoDB · CI/CD",
       ),
       Designation(
-        title: "SDE I",
+        title: "SDE",
         start: new DateTime(2023, 07, 01),
         end: new DateTime(2024, 03, 31),
         isPresent: false,
