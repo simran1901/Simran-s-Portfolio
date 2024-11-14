@@ -85,7 +85,7 @@ List<Experience> demoExperiences = [
     imageUrl: "assets/images/addaLogo.png",
     designations: [
       Designation(
-        title: "SDE II",
+        title: "SDE I",
         start: new DateTime(2024, 04, 01),
         end: new DateTime(2024, 08, 31),
         isPresent: false,
@@ -93,6 +93,7 @@ List<Experience> demoExperiences = [
         jobType: JobType.FT,
         description: [
           "Worked as Back-end developer responsible for building and deploying scalable microservices.",
+          "Led the Test Series Module at Adda247, driving the successful delivery of high-quality software solutions by implementing best practices and ensuring seamless integration.",
         ],
         skills: "Java · Spring Boot · MySQL · Python · Lua · ElasticSearch · Redis · MongoDB · CI/CD",
       ),
@@ -105,7 +106,6 @@ List<Experience> demoExperiences = [
         jobType: JobType.FT,
         description: [
           "Received Pre-Placement Offer (PPO) in recognition of exemplary performance and outstanding contributions during tenure as a SDE Trainee.",
-          "Led the Test Series Module at Adda247, driving the successful delivery of high-quality software solutions by implementing best practices and ensuring seamless integration.",
           "Developed a Rank Prediction module leveraging normal distribution, probability, and statistical inference. Handled concurrency on Redis using locking mechanisms and Kafka to ensure no data loss.",
           "Designed & implemented a highly scalable Live Test feature providing users with real-life strictly timed test environment developed using Lambda, SQS, Redis, Quartz, Spring boot.",
         ],
