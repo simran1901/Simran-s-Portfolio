@@ -12,6 +12,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: Responsive.isDesktop(context)
           ? null
           : AppBar(

@@ -19,7 +19,7 @@ class Knowledges extends StatelessWidget {
               vertical: defaultPadding),
           child: Text(
             "Knowledges",
-            style: Theme.of(context).textTheme.subtitle2,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
         KnowledgeText(text: "Competitive Programming, C++"),

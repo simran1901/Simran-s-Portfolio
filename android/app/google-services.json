@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545813727058",
+    "project_id": "simran-s-portfolio",
+    "storage_bucket": "simran-s-portfolio.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545813727058:android:7a861bb043fb0d1d481c8b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_profile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545813727058-c7ogcrtfjcqcsrks0jiam6d9g7tnlue3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ZawV1m_E8Gbk1T-jBDakgd4_d3SeZTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545813727058-c7ogcrtfjcqcsrks0jiam6d9g7tnlue3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

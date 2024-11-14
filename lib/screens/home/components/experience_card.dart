@@ -42,7 +42,7 @@ class ExperienceCard extends StatelessWidget {
             SizedBox(height: 10),
             ListView.builder(
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+             physics: NeverScrollableScrollPhysics(),
               itemCount: experience.designations!.length,
               itemBuilder: (context, index) => DesignationCard(
                 designation: experience.designations![index],
@@ -69,6 +69,7 @@ class DesignationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 10),

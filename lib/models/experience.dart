@@ -63,23 +63,41 @@ class Designation {
 
 List<Experience> demoExperiences = [
   Experience(
-    companyName: "Adda247",
-    imageUrl: "assets/images/addaLogo.png",
+    companyName: "American Express Global Business Travel",
+    imageUrl: "assets/images/amexgbtLogo.jpg",
     designations: [
       Designation(
-        title: "SDE 1",
-        start: new DateTime(2024, 04, 01),
+        title: "SDE II",
+        start: new DateTime(2024, 09, 03),
         end: DateTime.now(),
         isPresent: true,
         workType: WorkType.Remote,
         jobType: JobType.FT,
         description: [
-          "Currently working as Back-end developer responsible for building and deploying scalable microservices.",
+          "Currently working on Rail Booking System. Migrating business logic from a legacy system to a different service.",
+        ],
+        skills: "Java · Spring Boot · MongoDB · RabbitMQ · Maui",
+      ),
+    ],
+  ),
+  Experience(
+    companyName: "Adda247",
+    imageUrl: "assets/images/addaLogo.png",
+    designations: [
+      Designation(
+        title: "SDE II",
+        start: new DateTime(2024, 04, 01),
+        end: new DateTime(2024, 08, 31),
+        isPresent: false,
+        workType: WorkType.OnSite,
+        jobType: JobType.FT,
+        description: [
+          "Worked as Back-end developer responsible for building and deploying scalable microservices.",
         ],
         skills: "Java · Spring Boot · MySQL · Python · Lua · ElasticSearch · Redis · MongoDB · CI/CD",
       ),
       Designation(
-        title: "SDE",
+        title: "SDE I",
         start: new DateTime(2023, 07, 01),
         end: new DateTime(2024, 03, 31),
         isPresent: false,

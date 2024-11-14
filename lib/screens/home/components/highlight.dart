@@ -18,7 +18,7 @@ class Highlight extends StatelessWidget {
       children: [
         counter,
         SizedBox(width: defaultPadding / 2),
-        Text(label!, style: Theme.of(context).textTheme.subtitle2),
+        Text(label!, style: Theme.of(context).textTheme.titleSmall),
       ],
     );
   }

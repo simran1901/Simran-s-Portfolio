@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white)
             .copyWith(
-              bodyText1: TextStyle(color: bodyTextColor),
-              bodyText2: TextStyle(color: bodyTextColor),
+              bodyLarge: TextStyle(color: bodyTextColor),
+              bodyMedium: TextStyle(color: bodyTextColor),
             ),
       ),
       home: HomeScreen(),

@@ -22,10 +22,10 @@ class MyInfo extends StatelessWidget {
             Spacer(),
             Text(
               "Simran Makhijani",
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             Text(
-              "SDE 1",
+              "SDE II",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,
