@@ -13,7 +13,8 @@ enum JobType {
 
 enum WorkType {
   Remote("Remote"),
-  OnSite("On-site")
+  OnSite("On-site"),
+  Hybrid("Hybrid"),
   ;
 
   final String value;

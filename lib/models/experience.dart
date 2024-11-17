@@ -67,11 +67,11 @@ List<Experience> demoExperiences = [
     imageUrl: "assets/images/amexgbtLogo.jpg",
     designations: [
       Designation(
-        title: "SDE I",
+        title: "SDE II",
         start: new DateTime(2024, 09, 03),
         end: DateTime.now(),
         isPresent: true,
-        workType: WorkType.Remote,
+        workType: WorkType.Hybrid,
         jobType: JobType.FT,
         description: [
           "Currently working on Rail Booking System. Migrating business logic from a legacy system to a different service.",
